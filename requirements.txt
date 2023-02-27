@@ -1,0 +1,6 @@
+flask
+flask_restful
+python-dotenv
+flask_cors
+pyyaml
+pyserial

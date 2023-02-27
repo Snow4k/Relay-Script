@@ -1,0 +1,17 @@
+host: '10.147.20.10'
+port: 7070
+version: 1.0
+
+serials:
+  1:
+    Port: "COM3"
+    Baud: 9600
+    Stop: 1
+    DataBits: 8
+    TestCommand: "AT"
+    OnCommand: "AT+CH1=1"
+    OnCommandReturn: "OK+CH1=1"
+    OffCommand: "AT+CH1=0"
+    OffCommandReturn: "OK+CH1=0"
+    ErrorReturn: "Error"
+  
