@@ -65,12 +65,12 @@ api.add_resource(Endpoints.ImmixReading, '/')
 api.add_resource(Endpoints.RelayTrigger, '/relay/<RelayNumber>/<Command>')
 
 def main():
-
     #Check for updates
     checkForUpdates()
 
     #Parse configertion File
-    with open('config.yml', 'r') as file:
+    configPath = os.getcwd() + "\\src\\config.yml"
+    with open(configPath, 'r') as file:
         setting = yaml.safe_load(file)
     
         #Parse the main settings
